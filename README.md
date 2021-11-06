@@ -1,0 +1,4 @@
+# BusinessWebAppLayout
+A compact app layout using simple html and bootstrap for styling
+
+This app aims to provide a guide for would-be business application developers. It should serve as a decent example to show how bootstrap can be integrated with django to build a business UI. While the app aims to be intuititve, it will also be compact, using both tabs and navigation bar to pack a good load of functionality - basically covering a wide spectrum of business use cases. It will include: a wysiwyg editor using tabs, a data retrieval page which can be configured to connect to your business' sql server instance with ORM, a colleague chat functionality... etc    
