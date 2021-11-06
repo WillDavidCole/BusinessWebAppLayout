@@ -9,18 +9,14 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="scripts/tabs.js"></script>
     <title>Editor</title>
   </head>
+
 <body>
 
 <div class="container-fluid">
-    <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div>
-    
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
@@ -102,10 +98,20 @@
                 </div>
             </div>
         </div>
-        <div class="col py-3">
+        <div class="col">
+        <div class="row tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="addTab(event, 'Plus')">+</button>
+        </div>
             Content area...
         </div>
     </div>
 </div>
 </body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery-3.2.1.slim.min.js"></script>
+    <script src="vendor/jquery/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
 </html>
