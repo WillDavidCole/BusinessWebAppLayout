@@ -13,7 +13,6 @@
     <script src="scripts/tabs.js"></script>
     <title>Editor</title>
   </head>
-
 <body>
 
 <div class="container-fluid">
@@ -31,7 +30,7 @@
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Run View</span> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
@@ -82,10 +81,6 @@
                 </ul>
                 <hr>
                 <div class="dropdown pb-4">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                        <span class="d-none d-sm-inline mx-1">loser</span>
-                    </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                         <li><a class="dropdown-item" href="#">New project...</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
@@ -100,15 +95,15 @@
         </div>
         <div class="col">
         <div id="tab" class="row tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="addTab(event, 'Plus')">+</button>
+            <button id="button" type="button" class="tablinks close-button" onclick="reName(event)" onkeydown="completeRename(event)" data-close>Tab <span aria-hidden="true">&times;</span></button>
+            <button id="button-plus" class="tabplus" onclick="addTab(event)">+</button>
         </div>
+        <div id="content">
             Content area...
         </div>
     </div>
 </div>
 </body>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery-3.2.1.slim.min.js"></script>
     <script src="vendor/jquery/popper.min.js"></script>
